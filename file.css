@@ -5,12 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
-  color: #111;
-  line-height: 1.6;
+html, body {
+  height: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  color: #000000;
+  line-height: 1.6;
+  min-height: 100%;
+} 
 
 
 .container {
@@ -21,14 +24,17 @@ body {
 
 a {
   text-decoration: none;
+color: rgb(0, 0, 0);
 }
 
 /* css for header  */
 
 .header {
-  border-bottom: 1px solid #eee;
-  background: #fff;
-}
+  border-bottom: 1px solid #4f4e4e;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+} 
 
 .header-inner {
   display: flex;
@@ -44,20 +50,97 @@ a {
 .nav ul {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap:1.5vw;
 }
 
 .nav a {
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: 500;
 }
 
+.nav ul :hover{
+  transition: ease-in;
+  font-size: 1vw;
+  font-weight: 500;
+  color: rgb(0, 110, 255);
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 110, 255);
+}
+
+
 .header-actions button {
-    gap: 4vw;
-  background: none;
+  gap: 4vw;
+  background: transparent;
   border: none;
   font-size: 18px;
   margin-left: 12px;
   cursor: pointer;
+  color: rgb(0, 0, 0);
 }
 
+/* bg-img */
+
+.page-1{
+    background-image: url("./images/sams.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #000; /* fallback color */
+}
+.hero {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero h1 {
+  color: #040404;
+  font-size: clamp(32px, 6vw, 72px);
+  
+  margin-bottom: 17px;
+  
+  pointer-events: all;
+}
+.hero h2 {
+  color: #040404;
+  font-size: clamp(24px, 4vw, 56px);
+  
+  pointer-events: all;
+  margin-top: 0px;
+
+}
+
+.header-actions .search{
+  border: gray solid 1px;
+  padding: 0.5vw;
+  padding-right: 2vw; 
+  padding-left: 2vw; 
+  border-radius: 50px;
+  background-color: rgb(238, 238, 238);
+  color: gray;
+  
+
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 45%;
+  line-height: 300%;
+  
+}
+
+.buy-now{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
