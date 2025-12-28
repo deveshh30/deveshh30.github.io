@@ -95,6 +95,50 @@ color: rgb(0, 0, 0);
     overflow: hidden;
     background-color: #000; /* fallback color */
 }
+
+.secondary-nav{
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  z-index: 9;
+}
+.secondary-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+.secondary-inner .left{
+  font-weight: 700;
+  font-size: 1rem;
+}
+.secondary-inner .right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.secondary-inner .right a{
+  color: #333;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.25rem 0.6rem;
+}
+.secondary-inner .right a:hover{
+  color: #0b72ff;
+}
+.buy-now-sm{
+  background: #0b72ff;
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.buy-now-sm:hover{
+  background: #0557c6;
+}
+
 .hero {
   position: absolute;
   inset: 0;
