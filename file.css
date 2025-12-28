@@ -93,12 +93,12 @@ color: rgb(0, 0, 0);
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #000; /* fallback color */
+    background-color: #000;  
 }
 
 .secondary-nav{
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background: transparent;
+  border-bottom: 1px solid #6e6e6e;
   position: relative;
   z-index: 9;
 }
@@ -128,7 +128,7 @@ color: rgb(0, 0, 0);
 }
 .buy-now-sm{
   background: #0b72ff;
-  color: #fff;
+  color: white;
   border: none;
   padding: 0.45rem 0.9rem;
   border-radius: 20px;
@@ -211,4 +211,71 @@ color: rgb(0, 0, 0);
 .hero h5{
   color: rgb(0, 102, 255);
   font-weight: 400;
+}
+/* CREATING PAGE-2 */
+
+.page-2{
+  background-image: url("./images/page2.jpeg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.page-2-inner {
+  max-width: 1200px;
+  width: 100%;
+  padding: 4rem 0;
+}
+.hero-left{
+  width: 55%;
+  padding-left: 6%;
+}
+.hero-left h2{
+  font-size: clamp(36px, 6vw, 64px);
+  margin: 0 0 .4rem 0;
+  color: #fff;
+}
+.subtitle{
+  font-size: clamp(20px, 3vw, 36px);
+  margin: 0 0 1rem 0;
+  color: #dfe6ea;
+}
+.hero-actions{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.btnp2{
+  display:inline-block;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+.btnp2.first{
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.btnp2.first:hover{
+  background: rgba(0,0,0,0.75);
+}
+.btnp2.second{
+  background: transparent;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+.btnp2.second:hover{
+  padding-right: 2vw;
+  padding-left: 2vw;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  
 }
