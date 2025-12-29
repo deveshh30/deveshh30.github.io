@@ -449,7 +449,7 @@ color: rgb(0, 0, 0);
   border-radius: 50px;
   background: rgba(0,0,0,0.6);
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgb(112, 112, 112);
   cursor: pointer;
   pointer-events: auto;
   transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
@@ -457,7 +457,7 @@ color: rgb(0, 0, 0);
 
 .button-page-5:hover{
   background: rgba(0,120,215,0.95);
-  border-color: rgba(255,255,255,0.18);
+  border-color: rgba(0, 0, 0, 0.383);
 }
 
 .page-5 h2{
