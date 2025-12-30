@@ -546,14 +546,14 @@ a {
 
 @media (max-width: 768px) {
 
-  
+  /* CONTAINER */
   .container {
     width: 92%;
   }
 
-  
+  /* HEADER */
   .nav {
-    display: none; 
+    display: none; /* later you can add hamburger */
   }
 
   .header-inner {
@@ -561,7 +561,7 @@ a {
     padding: 12px 0;
   }
 
-  
+  /* HERO (PAGE 1) */
   .hero {
     position: static;
     padding: 120px 16px 40px;
@@ -581,7 +581,6 @@ a {
     font-size: 14px;
   }
 
-  
   .page-2 {
     min-height: auto;
     padding: 80px 0;
