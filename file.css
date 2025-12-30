@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,8 @@
   user-select: none;
 }
 
-
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -16,8 +16,7 @@ body {
   color: #000000;
   line-height: 1.6;
   min-height: 100%;
-} 
-
+}
 
 .container {
   width: 80%;
@@ -27,7 +26,7 @@ body {
 
 a {
   text-decoration: none;
-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 /* css for header  */
@@ -37,7 +36,7 @@ color: rgb(0, 0, 0);
   background: transparent;
   position: relative;
   z-index: 10;
-} 
+}
 
 .header-inner {
   display: flex;
@@ -53,7 +52,7 @@ color: rgb(0, 0, 0);
 .nav ul {
   display: flex;
   list-style: none;
-  gap:1.5vw;
+  gap: 1.5vw;
 }
 
 .nav a {
@@ -61,7 +60,7 @@ color: rgb(0, 0, 0);
   font-weight: 500;
 }
 
-.nav ul :hover{
+.nav ul :hover {
   transition: ease-in;
   font-size: 1vw;
   font-weight: 500;
@@ -69,7 +68,6 @@ color: rgb(0, 0, 0);
   text-decoration: underline;
   text-decoration-color: rgb(0, 110, 255);
 }
-
 
 .header-actions button {
   gap: 4vw;
@@ -83,50 +81,50 @@ color: rgb(0, 0, 0);
 
 /* bg-img */
 
-.page-1{
-    background-image: url("./images/sams.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-color: #000;  
+.page-1 {
+  background-image: url("./images/sams.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
 }
 
-.secondary-nav{
+.secondary-nav {
   background: transparent;
   border-bottom: 1px solid #6e6e6e;
   position: relative;
   z-index: 9;
 }
-.secondary-inner{
+.secondary-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.6rem 0;
 }
-.secondary-inner .left{
+.secondary-inner .left {
   font-weight: 700;
   font-size: 1rem;
 }
-.secondary-inner .right{
+.secondary-inner .right {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.secondary-inner .right a{
+.secondary-inner .right a {
   color: #333;
   font-size: 0.95rem;
   text-decoration: none;
   padding: 0.25rem 0.6rem;
 }
-.secondary-inner .right a:hover{
+.secondary-inner .right a:hover {
   color: #0b72ff;
 }
-.buy-now-sm{
+.buy-now-sm {
   background: #0b72ff;
   color: white;
   border: none;
@@ -135,7 +133,7 @@ color: rgb(0, 0, 0);
   cursor: pointer;
   font-weight: 600;
 }
-.buy-now-sm:hover{
+.buy-now-sm:hover {
   background: #0557c6;
 }
 
@@ -147,48 +145,44 @@ color: rgb(0, 0, 0);
   justify-content: center;
   z-index: 2;
   text-align: center;
-  pointer-events: auto; 
-} 
+  pointer-events: auto;
+}
 
 .hero h1 {
   color: #040404;
   font-size: clamp(32px, 6vw, 72px);
-  
+
   margin-bottom: 17px;
-  
+
   pointer-events: all;
 }
 
 .hero h2 {
   color: #040404;
   font-size: clamp(24px, 4vw, 56px);
-  
+
   pointer-events: all;
   margin-top: 0px;
-
 }
 
-.header-actions .search{
+.header-actions .search {
   border: gray solid 1px;
   padding: 0.5vw;
-  padding-right: 2vw; 
-  padding-left: 2vw; 
+  padding-right: 2vw;
+  padding-left: 2vw;
   border-radius: 50px;
   background-color: rgb(238, 238, 238);
   color: gray;
-  
-
 }
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   position: absolute;
   left: 45%;
   line-height: 300%;
-  
 }
 
-.hero button{
+.hero button {
   z-index: 999;
   padding: 0.5vw;
   font-size: large;
@@ -197,24 +191,24 @@ color: rgb(0, 0, 0);
   background-color: whitesmoke;
   margin-top: 1vw;
   cursor: pointer;
-  transition: background-color 200ms ease, transform 180ms ease, color 200ms ease;
+  transition: background-color 200ms ease, transform 180ms ease,
+    color 200ms ease;
   padding-left: 2vw;
   padding-right: 2vw;
 }
 
-.hero button:hover{
+.hero button:hover {
   background-color: rgb(0, 150, 255);
   color: #fff;
   border-color: rgb(255, 255, 255);
 }
 
-.hero h5{
+.hero h5 {
   color: rgb(0, 102, 255);
   font-weight: 400;
 }
 
-
-.page-2{
+.page-2 {
   background-image: url("./images/page2.jpeg");
   background-size: cover;
   background-position: center right;
@@ -235,62 +229,67 @@ color: rgb(0, 0, 0);
   padding: 4rem 0;
 }
 
-.hero-left{
+.hero-left {
   width: 55%;
   padding-left: 6%;
 }
 
-.hero-left h2{
+.hero-left h2 {
   font-size: clamp(36px, 6vw, 64px);
-  margin: 0 0 .4rem 0;
+  margin: 0 0 0.4rem 0;
   color: #fff;
 }
 
-.subtitle{
+.subtitle {
   font-size: clamp(20px, 3vw, 36px);
   margin: 0 0 1rem 0;
   color: #dfe6ea;
 }
 
-.hero-actions{
+.hero-actions {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.btnp2{
-  display:inline-block;
-  padding: .5rem 1rem;
+.btnp2 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+  transition: transform 160ms ease, background-color 160ms ease,
+    color 160ms ease;
 }
 
-.btnp2.first{
-  background: rgba(0,0,0,0.6);
+.btnp2 .first {
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.15);
+  
 }
 
-.btnp2.first:hover{
-  background: rgba(0,0,0,0.75);
+.btnp2 .first:hover {
+  background: rgba(0, 0, 0, 0.75);
+  text-decoration: underline;
 }
 
-.btnp2.second{
+.btnp2 .second {
   background: transparent;
   padding-right: 2vw;
   padding-left: 2vw;
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  transition: transform 160ms ease, background-color 160ms ease,
+    color 160ms ease;
 }
 
-.btnp2.second:hover{
+.btnp2 .second:hover {
   padding-right: 2vw;
   padding-left: 2vw;
   border: none;
-  background: rgba(255,255,255,0.08);
-  
+  background: rgb(0, 150, 255);
+  transition: transform 160ms ease, background-color 160ms ease,
+    color 160ms ease;
 }
 
 .products {
@@ -324,7 +323,6 @@ color: rgb(0, 0, 0);
   font-weight: 600;
 }
 
-
 .ai-tv {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -355,7 +353,7 @@ color: rgb(0, 0, 0);
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  pointer-events: auto; 
+  pointer-events: auto;
   transition: color 160ms ease, text-decoration 160ms ease;
 }
 .buttons a:hover {
@@ -363,25 +361,24 @@ color: rgb(0, 0, 0);
   color: #0b72ff;
 }
 
-
 .buttons button {
   padding: 10px 22px;
   border-radius: 999px;
   border: 1px solid #000;
   background: transparent;
   cursor: pointer;
-  pointer-events: auto; 
+  pointer-events: auto;
   font-weight: 500;
-  transition: background-color 180ms ease, color 180ms ease, transform 160ms ease;
+  transition: background-color 180ms ease, color 180ms ease,
+    transform 160ms ease;
 }
 
-.buttons button:hover{
+.buttons button:hover {
   background: rgb(0, 150, 255);
   color: #fff;
   border-color: rgb(255, 255, 255);
   transform: translateY(-2px);
 }
-
 
 .ai-right {
   text-align: center;
@@ -405,7 +402,7 @@ color: rgb(0, 0, 0);
 }
 
 /* PAGE-5 */
-.page-5{
+.page-5 {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -415,7 +412,7 @@ color: rgb(0, 0, 0);
   justify-content: center;
 }
 
-.page-5-content{
+.page-5-content {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -429,7 +426,7 @@ color: rgb(0, 0, 0);
   padding: 2rem;
 }
 
-.page-5 img{
+.page-5 img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -439,30 +436,31 @@ color: rgb(0, 0, 0);
   z-index: 1;
 }
 
-.button-page-5{
+.button-page-5 {
   position: absolute;
-  left: 3rem; 
+  left: 3rem;
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
   padding: 0.8rem 1.6rem;
   border-radius: 50px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   border: 1px solid rgb(112, 112, 112);
   cursor: pointer;
   pointer-events: auto;
-  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  transition: transform 160ms ease, background-color 160ms ease,
+    border-color 160ms ease;
 }
 
-.button-page-5:hover{
-  background: rgba(0,120,215,0.95);
+.button-page-5:hover {
+  background: rgba(0, 120, 215, 0.95);
   border-color: rgba(0, 0, 0, 0.383);
 }
 
-.page-5 h2{
+.page-5 h2 {
   position: absolute;
-  left: 3rem; 
+  left: 3rem;
   top: 50%;
   transform: translateY(-180%);
   color: white;
@@ -470,9 +468,9 @@ color: rgb(0, 0, 0);
   z-index: 4;
 }
 
-.page-5 h1{
+.page-5 h1 {
   position: absolute;
-  left: 3rem; 
+  left: 3rem;
   top: 50%;
   transform: translateY(-220%);
   color: white;
@@ -545,3 +543,102 @@ color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 
+
+@media (max-width: 768px) {
+
+  
+  .container {
+    width: 92%;
+  }
+
+  
+  .nav {
+    display: none; 
+  }
+
+  .header-inner {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  
+  .hero {
+    position: static;
+    padding: 120px 16px 40px;
+    line-height: normal;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+
+  .hero h2 {
+    font-size: clamp(20px, 5vw, 32px);
+  }
+
+  .hero button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  
+  .page-2 {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .page-2-inner {
+    position: static;
+    padding: 0;
+  }
+
+  .hero-left {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 16px;
+  }
+
+
+  .ai-tv {
+    grid-template-columns: 1fr;
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .page-5 {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .page-5 h1,
+  .page-5 h2,
+  .button-page-5 {
+    position: static;
+    transform: none;
+    margin-top: 16px;
+  }
+
+  .page-5 h1 {
+    font-size: 32px;
+  }
+
+  .page-5 h2 {
+    font-size: 18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+}
